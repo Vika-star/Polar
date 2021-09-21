@@ -1,0 +1,373 @@
+
+.main-block {
+    background: rgba(242, 206, 218, 0.3);
+    padding: 173px 0px 88px 0px;
+    
+    @include tablet-vert {
+        padding: 133px 0px 82px 0px;
+        
+    }
+    @include tablet{
+        padding: 100px 0px 76px 0px;
+        
+    }
+    @include small-tablet{
+        padding: 60px 0px 60px 0px;
+        
+    }
+    &__container {
+        display: flex;
+        @include small-tablet{
+            flex-direction: column-reverse;
+            text-align: center;
+            align-items: center;
+        }
+
+        
+    }
+    &__content {
+        flex: 1 1 auto;
+        padding: 0 11px 0 0;
+        @include small-tablet{
+            padding: 25px 0 0 0;
+        }
+        
+        *:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__annotation{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(16/14*100%);
+        letter-spacing: 0.1em;
+
+        color: #0f0101;
+        margin: 0 0 6px 0;
+    }
+    &__title {
+        font-family: 'Fredoka One';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 57.33px;
+        line-height: 120.5%;
+        max-width: 666px;
+        margin: 0 0 25px 0;
+        &_span{
+            color: rgba(210, 49, 102, 0.6)
+        }
+
+        @include small-tablet{
+            font-size: 44.33px;
+        }
+        @include mobile{
+            font-size: 35.33px;
+        }
+        
+    }
+    &__text {
+        margin: 0 0 45px 0;
+        font-size: 18px;
+        max-width: 524.19px;
+        @include small-tablet{
+            max-width: none;
+            margin: 0 0 30px 0;
+            font-size: 14px;
+        }
+    }
+    &__btn {
+    }
+    &__preview {
+        width: 440px;
+        height: 464px;
+
+        justify-content: start;
+        @include small-tablet{
+            width: 272.05px;
+            height: 350px;
+        }
+        @include mobile{
+            width: 233.18px;
+            height: 300px;
+        }
+        @include mobile-min{
+            width: 194.32px;
+            height: 250px;
+        }
+        @include mobile-s{
+            width: 171px;
+            height: 220px;
+        }
+    }
+}
+
+
+// ======================================================================================
+
+
+.blocks-advantage {
+    padding: 106px 0;
+    @include small-tablet{
+        padding: 70px 0;
+        
+    }
+    
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -5px -17px;
+        
+        @include mobile{
+            margin: 0;
+        }
+    }
+    
+    &__column {
+        
+        flex: 0 1 50%;
+        max-width: 250px;
+        
+        padding: 5px 17px;
+
+        @include mobile{
+            max-width: none;
+            margin: 15px 0;
+            padding: 2px;
+        }
+    }
+        &__item {
+        
+        display: flex;
+        flex-direction: column;
+    }
+}
+.block-advantage {
+    
+    padding: 30px 26px 26px 26px;
+    max-width: 250px;
+    min-width: 200px;
+    max-height: 300px;
+    border-radius: 7px;
+    transition: color 0.8s ease 0s;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    @media (min-width:992px) {
+        &:hover{
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+        }
+    }
+    @include mobile{
+        // padding: 20px 16px 16px 16px;
+    }
+    &__image {
+        max-height: 42px;
+        max-width: auto;
+    }
+    &__title {
+        font-family: 'Hind Madurai';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: calc(28 / 20 * 100%);
+        text-align: center;
+        @media (min-width: $md2+px) {
+            &:hover{
+                color: #D23166;
+            }
+        }
+    }
+    &__text {
+        font-family: 'Hind Madurai';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: calc(19 / 14 *100%);
+        text-align: center;
+
+        color: #000000;
+    }
+}
+
+// ===================================================================================
+.main-product {
+    padding: 93px 0 82px 0;
+    background: rgba(242, 206, 218, 0.3);
+    @include small-tablet{
+        padding: 70px 0px 60px 0px;
+        
+    }
+    &__container {
+        display: flex;
+        @include small-tablet{
+            flex-direction: column-reverse;
+            text-align: center;
+            align-items: center;
+        }
+        
+    }
+    &__content {
+        flex: 1 1 auto;
+        padding: 0 200px 0 0;
+        @include small-desktop-min{
+            padding: 0 120px 0 0;
+        }
+        @include tablet-vert{
+            padding: 0 60px 0 0;
+        }
+        @include tablet{
+            padding: 0 0px 0 0;
+        }
+        // @include small-tablet{
+        //     padding: 0 ;
+            
+        // }
+        *:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__title {
+        line-height: calc(48.84 / 44.2 * 100%);
+        margin: 54px 0 31px 0;
+        @include mobile{    
+            margin: 0px 0 20px 0;
+        }
+        
+    }
+    &__text {
+        font-size: 16px;
+        margin: 0 0 25px 0;
+        max-width: 442px;
+        @include mobile{    
+            margin: 0px 0 35px 0;
+            font-size: 14px;
+        }
+
+    }
+    &__btn {
+
+    }
+    &__preview {
+        width: 475.49px;
+        height: 370px;
+        @include small-desktop-min{
+            width: 449.79px;
+            height: 350px;
+        }
+        @include tablet-vert{
+            width: 424.09px;
+            height: 330px;
+        }
+        @include small-tablet{
+            width: 411px;
+            height: 320px;
+            margin: 0 0 15px 0;
+        }
+        @include mobile-s{
+            width: 271px;
+            height: 211px;
+        }
+    }
+}
+
+// ===================================================================================
+
+
+.block-question {
+    margin: 191px 0 129px 0;
+    @include small-desktop-min{
+        margin: 171px 0 109px 0;
+    }
+    @include tablet-vert{
+        margin: 131px 0 89px 0;
+    }
+    @include tablet{
+        margin: 100px 0 89px 0;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 52px;
+        text-align: center;
+
+        color: #000000;
+        margin: 0 0 59px 0;
+        @include tablet{
+            margin: 0 0 30px 0;
+        }
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+    }
+    &__email {
+        background: #FAFAFA;
+        border-radius: 5px 0 0 5px;
+        border:0;
+        padding: 28px 30px;
+        // min-height: 74px;
+        max-width: 503px;
+        width: 100%;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: calc(16 / 14 *100%);
+
+        color: rgba(15, 0, 0, 0.7);
+
+        @include tablet{
+            font-size: 10px; 
+            padding: 18px 15px;
+        }
+    }
+    &__button {
+        background: #D64374;
+        border-radius: 5px;
+        border: 0;
+        padding: 0 46px;
+        display: flex;
+        width: 100%;
+        max-width: 134px;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(23 / 20 * 100%);
+
+        color: #FFFFFF;
+        @media (min-width:992px) {
+            &:hover{
+                background-color: #d00045;
+            }
+        }
+        @include tablet{
+            font-size: 16px; 
+            padding: 0;
+        }
+        
+        
+    }
+}
+
+
+
+
+
