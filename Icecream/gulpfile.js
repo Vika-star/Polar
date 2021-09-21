@@ -1,6 +1,6 @@
 // const browserSync = require('browser-sync');
 
-let project_folder = "dist";
+let project_folder = "docs";
 let source_folder = "#src";
 
 // let fs = require('fs');
