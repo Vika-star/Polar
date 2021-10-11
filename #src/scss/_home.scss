@@ -368,6 +368,124 @@
 }
 
 
+.quote {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include small-tablet{
+            flex-direction: column-reverse;
+        }
+    }
+    &__swiper {
+        margin: 0 224px 0 0 !important;
+        @include small-desktop-min{
+            margin: 0 184px 0 0 !important;
+        }
+        @include tablet-vert{
+            margin: 0 100px 0 0 !important;
+        }
+        @include tablet{
+            margin: 0 40px 0 0 !important;
+        }
+        @include small-tablet{
+            margin: 0 !important;
+        }
+    }
+    &__content-img {
+        img{
+            width: 100%;
+        }
+        @include small-tablet{
+            width: 80%;
+            margin: 0 0 40px 0;
+        }
+    }
+}
 
+.swiper {
+    width: 345px;
+    height: 270.81px;
+    @include small-tablet{
+        width: 75%;
+    }
+    @include mobile{
+        height: 310px;
+    }
+    &-wrapper {
+    }
+    &-slide {
+    }
+    &-slide__image {
+    }
+    &-slider__name {
+        display: flex;
+        margin: 0 0 46px  0;
+    }
+    &-slider__avatar {
+        margin: 0 20px 0 0;
+    }
+    &-slider__block-text {
+    }
+    &-slider__title {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: calc(28px / 24px * 100%);
+        margin: 0 0 5px 0;
+    }
+    &-slider__author {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(14px / 12px * 100%);
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    &-slider__quote {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: calc(24px / 16px * 100%);
+        color: rgba(0, 0, 0, 0.7);
+    }
+    &-pagination {
+    }
+    &-button-prev::after {
+        color: #D64374;
+        font-size: 14px !important;
+        padding: 200px 10px 0 10px;
+        position: 0;
+        @include mobile{
+            display: none;
+        }
+   
+    }
+    &-button-next::after {
+        @extend .swiper-button-prev
+    }
+}
 
+.swiper .swiper-pagination-bullet
+{
+    width: 57.81px;
+    height: 57.81px;
+    border: 1px solid #D64374;
+    img{
+        width: 100%;
+    }
+}
+  
 
+.quotes {
+    &__left::after {
+        content: url('../img/quote/quote2.svg');
+        margin: 0px 5px 0 0 ;
+    }
+    &__right::after{
+        content: url('../img/quote/quote.svg');
+        margin: 0px 0 0 5px ;
+    }
+   
+}
