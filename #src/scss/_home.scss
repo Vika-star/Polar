@@ -455,18 +455,25 @@
     &-button-prev::after {
         color: #D64374;
         font-size: 14px !important;
-        padding: 200px 10px 0 10px;
         position: 0;
         @include mobile{
             display: none;
         }
    
     }
+    &-button-prev{
+        left: 0 !important;
+    }
     &-button-next::after {
-        @extend .swiper-button-prev
+        @extend .swiper-button-prev;
+    }
+    &-button-next{
+        right: 0 !important;
     }
 }
-
+.swiper-button-next, .swiper-button-prev{
+    top: 85% !important;
+}
 .swiper .swiper-pagination-bullet
 {
     width: 57.81px;
